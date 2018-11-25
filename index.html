@@ -5,21 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="moth.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </head>
 <body>
-    <header>Welcome to Lenny Face Generator</header>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">eSKEDIT</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="https://www.youtube.com/channel/UCG8rbF3g2AMX70yOd8vqIZg" target="_blank">yaaa YEEET</a></li>
+            <li><a href="https://www.youtube.com/user/JakePaulProductions" target="_blank">Lord n Savior</a></li>
+            <li><a href="https://www.youtube.com/watch?v=U4DeB4V2ZnY" target="_blank">Quality Content</a></li>
+          </ul>
+          <form action="https://www.fiverr.com/hungbreadstick/make-fun-of-your-friends-for-you?context_referrer=search_gigs&context_type=auto&pckg_id=1&pos=7&ref_ctx_id=ac28d7c3-10ca-4bfb-956d-e86d6b408f4e&funnel=ae6f432f-d2f7-49f2-95fe-07a4af352611">
+            <button class="btn btn-danger navbar-btn">Donate!</button>
+          </form>
+        </div>
+      </nav>
+      <br>
     <fieldset>
-            <p>Pick your Lenny Face Components</p>
-            <select id = "ears">
-                <option value = "(  )">(  ͡)</option>
-                <option value = "ʕ ͡ ʔ">ʕ ͡ ʔ</option>
-                <option value = "̿̿ ̿̿ ̿̿ ̿'̿'\̵͇̿̿\з=( )=ε/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿"> ̿̿ ̿̿ ̿̿ ̿'̿'\̵͇̿̿\з=( )=ε/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿ </option>
-                <option value = "( )ᓄ✂">( )ᓄ✂</option>
-                <option value = "( )ﾉ⌒♡*:･。.">( )ﾉ⌒♡*:･。.</option>
-                <option value = "╾━╤デ╦︻( )├┬┴┬">╾━╤デ╦︻( )├┬┴┬</option>
-            </select>
+            <div class="container">
+            <form class="form-horizontal">
+                    <p>Pick your Lenny Face Components</p>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="Ears">Ears:</label>
+                        <div class="control-label col-sm-5">
+                        <select class="form-control" id = "ears">
+                            <option value = "(  )">(  ͡)</option>
+                            <option value = "ʕ ͡ ʔ">ʕ ͡ ʔ</option>
+                            <option value = "( )ᓄ✂">( )ᓄ✂</option>
+                            <option value = "( )ﾉ⌒♡*:･。.">( )ﾉ⌒♡*:･。.</option>
+                            <option value = "╾━╤デ╦︻( )├┬┴┬">╾━╤デ╦︻( )├┬┴┬</option>
+                        </select>
+                    </div>
+                    </div>
             <select id = "face">
                 <option value = " ͡ ° ͜ʖ ͡ – ✧"> ͡ ° ͜ʖ ͡ – ✧</option> 
                 <option value = "° ͜ʖ ͡°">° ͜ʖ ͡°</option> 
@@ -29,8 +53,11 @@
                 <option value = "▀̿ Ĺ̯ ▀̿">▀̿ Ĺ̯ ▀̿</option>
                 <option value = "◕ ͜ʖ ͡◕">◕ ͜ʖ ͡◕</option>
             </select>
-            <button onclick = "generator()"></button>
+       
+            <button onclick = "generator()">GENERATE!</button>
             <p id = "result"> </p>
+        </form>
+    </div>
     </fieldset>
         
 </body>
