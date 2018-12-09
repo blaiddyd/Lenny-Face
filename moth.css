@@ -1,0 +1,66 @@
+.container {
+    background: white;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: bg-animation 10s infinite;
+  }
+  
+  @-webkit-keyframes bg-animation {
+    0% {
+      background-color: red;
+    }
+    15% {
+      background-color: yellow;
+    }
+    30% {
+      background-color: green;
+    }
+    45% {
+      background-color: blue;
+    }
+    60% {
+      background-color: purple;
+    }
+    75% {
+      background-color: #4deeea;
+    }
+    90% {
+      background-color: #f000ff;
+    }
+    100% {
+      background-color: #ffe700;
+    }
+  }
+  
+  @keyframes bg-animation {
+    0% {
+      background-color: red;
+    }
+    15% {
+      background-color: yellow;
+    }
+    30% {
+      background-color: green;
+    }
+    45% {
+      background-color: blue;
+    }
+    60% {
+      background-color: purple;
+    }
+    75% {
+      background-color:  #4deeea;
+    }
+    90% {
+      background-color: #f000ff;
+    }
+    100% {
+      background-color: #ffe700;
+    }
+  }

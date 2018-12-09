@@ -11,6 +11,7 @@
     <script src="main.js"></script>
 </head>
 <body>
+  <div class="background">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -28,7 +29,6 @@
         </div>
       </nav>
       <br>
-    <fieldset>
             <div class="container">
             <form class="form-horizontal">
                     <p>Pick your Lenny Face Components</p>
@@ -44,21 +44,27 @@
                         </select>
                     </div>
                     </div>
-            <select id = "face">
-                <option value = " ͡ ° ͜ʖ ͡ – ✧"> ͡ ° ͜ʖ ͡ – ✧</option> 
-                <option value = "° ͜ʖ ͡°">° ͜ʖ ͡°</option> 
-                <option value = "☭ ͜ʖ ☭">☭ ͜ʖ ☭</option>
-                <option value = "~ ͜ 𐭃 ͡~">(͡~ ͜ 𐭃 ͡~</option>
-                <option value = "༎ຶ ͜ʖ ͡༎ຶ ">༎ຶ ͜ʖ ͡༎ຶ </option>
-                <option value = "▀̿ Ĺ̯ ▀̿">▀̿ Ĺ̯ ▀̿</option>
-                <option value = "◕ ͜ʖ ͡◕">◕ ͜ʖ ͡◕</option>
-            </select>
-       
-            <button onclick = "generator()">GENERATE!</button>
-            <p id = "result"> </p>
+                <div class="form-group">         
+                    <label class="control-label col-sm-3" for="Face">Face:</label>
+                    <div class="control-label col-sm-5">
+                    <select class="form-control" id = "face">
+                        <option value = " ͡ ° ͜ʖ ͡ – ✧"> ͡ ° ͜ʖ ͡ – ✧</option> 
+                        <option value = "° ͜ʖ ͡°">° ͜ʖ ͡°</option> 
+                        <option value = "☭ ͜ʖ ☭">☭ ͜ʖ ☭</option>
+                        <option value = "~ ͜ 𐭃 ͡~">(͡~ ͜ 𐭃 ͡~</option>
+                        <option value = "༎ຶ ͜ʖ ͡༎ຶ ">༎ຶ ͜ʖ ͡༎ຶ </option>
+                        <option value = "▀̿ Ĺ̯ ▀̿">▀̿ Ĺ̯ ▀̿</option>
+                        <option value = "◕ ͜ʖ ͡◕">◕ ͜ʖ ͡◕</option>
+                    </select>
+                    </div>
+                </div>
+            </div> 
         </form>
-    </div>
-    </fieldset>
-        
+        <div id="lenny" class="container">
+            <button onclick = "generator()">GENERATE!</button>
+            <p id="result"></p>
+        </div>
+        <p>This is sick dawg</p>
+</div>  
 </body>
 </html>
